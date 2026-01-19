@@ -1,0 +1,654 @@
+/* Configuración General */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Navegación del ejercicio */
+.main-nav {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.main-nav a.active {
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+/* Header Institucional */
+.kinal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-placeholder {
+    height: 50px;
+}
+
+.kinal-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.kinal-nav li {
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #002d62;
+    /* Azul Kinal */
+    cursor: pointer;
+}
+
+/* Sección Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-logo-large {
+    max-width: 400px;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Sección de Lema y Texto */
+.motto-section {
+    text-align: center;
+    padding: 60px 15%;
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+}
+
+.motto-badge {
+    background-color: #002d62;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transform: rotate(-2deg);
+    margin-bottom: 20px;
+}
+
+.motto-badge h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.motto-badge p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.motto-section h1 {
+    color: #002d62;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.description,
+.value-statement {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Cuadrícula de Educación */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+.secondary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0 10% 50px;
+}
+
+/* Estilo de Tarjetas */
+.edu-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.edu-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 15px 0;
+    height: 110px;
+    /* Alineación uniforme */
+}
+
+/* Etiquetas (Tags) */
+.tag {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.tag-purple {
+    background-color: #8e44ad;
+}
+
+.tag-blue {
+    background-color: #2980b9;
+}
+
+.tag-orange {
+    background-color: #f39c12;
+}
+
+.tag-dark {
+    background-color: #002d62;
+}
+
+/* Botones */
+.btn-more {
+    background-color: #002d62;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-more:hover {
+    background-color: #f1c40f;
+    color: #002d62;
+}
+
+/* Sección de Impacto */
+.impact-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.impact-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    /* Oscurece un poco la imagen para que el texto resalte */
+}
+
+.impact-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.impact-text h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.impact-text h2 {
+    font-size: 3.5rem;
+    margin: 5px 0;
+    font-weight: 800;
+}
+
+.impact-text h2 span {
+    color: #f1c40f;
+}
+
+/* Amarillo Kinal para la palabra clave */
+
+.impact-subtext {
+    background: #e67e22;
+    /* Naranja para el tag */
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* Footer de Partners */
+.partners-footer {
+    background-color: #002d62;
+    color: white;
+    padding: 60px 10% 40px;
+    text-align: center;
+}
+
+.partners-footer h4 {
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.partners-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-logo {
+    height: 45px;
+    filter: brightness(0) invert(1);
+    /* Hace los logos blancos para que combinen con el fondo azul */
+    transition: opacity 0.3s;
+}
+
+.partner-logo:hover {
+    opacity: 0.7;
+}
+
+/* Explicación del Rediseño */
+.redesign-explanation {
+    margin-top: 80px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #cbd5e0;
+}
+
+.redesign-explanation hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.redesign-explanation h3 {
+    color: #f1c40f;
+}
+
+/* Sección de Antiguos Alumnos */
+.alumni-section {
+    padding: 80px 10%;
+    background-color: #fcfcfc;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.alumni-title {
+    color: #002d62;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.alumni-subtitle {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.stats-box {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.stats-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.stats-text strong {
+    color: #002d62;
+    font-size: 1.3rem;
+}
+
+/* Botón de Trabajos */
+.btn-jobs {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #002d62;
+    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    transition: transform 0.2s;
+}
+
+.btn-jobs:hover {
+    transform: scale(1.1);
+}
+
+.heart-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Sección de Apóyanos */
+.support-section {
+    padding: 100px 10%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.support-title {
+    color: #002d62;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.support-text {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+/* Botón de Apóyanos Estilizado */
+.btn-support {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #002d62;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 15px 40px;
+    border: 2px solid #002d62;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-support:hover {
+    background-color: #002d62;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,45,98,0.2);
+}
+
+/* Ajuste al Footer de Partners (para que se vea después de Apóyanos) */
+.partners-footer {
+    border-top: 5px solid #f1c40f; /* Línea decorativa amarilla al inicio del footer */
+}
+
+/* Dashboard de Estadísticas */
+.stats-dashboard {
+    background-color: #002d62;
+    color: white;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.stats-dashboard h2 {
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.stat-box {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover { transform: scale(1.05); }
+
+.stat-number { font-size: 3rem; font-weight: 800; margin-bottom: 10px; }
+
+.stat-box hr { width: 40px; border: 1px solid white; margin: 15px 0; }
+
+.stat-label { font-size: 0.8rem; font-weight: bold; }
+
+/* Colores de las cajas */
+.yellow { background-color: #f1c40f; color: #002d62; }
+.yellow hr { border-color: #002d62; }
+.purple { background-color: #800040; }
+.blue { background-color: #3b5998; }
+.orange { background-color: #e67e22; }
+
+/* Sección del Blog */
+.blog-section {
+    padding: 60px 10%;
+    background-color: #002d62;
+    text-align: center;
+    color: white;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.blog-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 200px;
+    cursor: pointer;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.blog-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-overlay p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.blog-card:hover .blog-img {
+    filter: brightness(0.7);
+}
+
+/* Estilos del Footer Final */
+.footer-info {
+    background-color: #002d62;
+    color: white;
+    padding: 60px 10% 20px;
+    font-size: 0.85rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 40px;
+}
+
+.footer-column h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.footer-column p { margin: 5px 0; opacity: 0.8; }
+
+.footer-logo { max-height: 100px; }
+
+.footer-column.right { text-align: right; max-width: 300px; }
+
+/* Botones de WhatsApp/Admisiones en Footer */
+.whatsapp-btn, .admissions-btn {
+    background: white;
+    color: #002d62;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.icon {
+    background: white;
+    color: #002d62;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem; /* Simulación de iconos */
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+/* Sección de Análisis de Rediseño */
+.redesign-analysis {
+    background-color: #f0f4f8; /* Un gris azulado muy claro para resaltar */
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.analysis-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 45, 98, 0.15);
+    padding: 50px;
+    max-width: 900px;
+    border-left: 8px solid #f1c40f; /* Detalle en amarillo Kinal */
+}
+
+.analysis-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.analysis-icon { font-size: 2.5rem; }
+
+.analysis-header h2 {
+    color: #002d62;
+    margin: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.analysis-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.analysis-item h3 {
+    color: #e67e22; /* Naranja para resaltar títulos internos */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.analysis-item p {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .analysis-body { grid-template-columns: 1fr; }
+}
